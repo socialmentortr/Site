@@ -3,69 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profesyonel Sosyal Medya & Demo Site</title>
+<title>Şahinler Premium Araba Demo</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
 /* ===== Genel ===== */
-body {font-family:'Roboto',sans-serif;margin:0;padding:0;background:#f4f6f9;color:#333;scroll-behavior:smooth;}
-.container {width:90%;max-width:1200px;margin:auto;}
-h1,h2,h3{margin:0;}
+body {font-family:'Roboto',sans-serif;margin:0;padding:0;background:#f8f9fa;color:#333;scroll-behavior:smooth;}
 a{text-decoration:none;}
+.container {width:90%;max-width:1200px;margin:auto;}
 
 /* ===== Header ===== */
-header{background:#1da1f2;color:#fff;padding:20px 0;text-align:center;position:sticky;top:0;z-index:999;}
+header{background:#111;color:#fff;padding:20px 0;text-align:center;position:sticky;top:0;z-index:999;}
+header h1{font-family:'Roboto',sans-serif;font-weight:700;margin:0;}
 header nav ul{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;padding:0;margin-top:10px;}
 header nav ul li{margin:0 15px;}
 header nav ul li a{color:#fff;font-weight:bold;transition:0.3s;}
-header nav ul li a:hover{color:#ffeb3b;}
+header nav ul li a:hover{color:#f39c12;}
 
 /* ===== Hero ===== */
-#hero{background:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=1400&q=80') no-repeat center/cover;text-align:center;color:white;padding:120px 20px;}
-#hero h2{font-size:2.5em;}
-#hero p{font-size:1.2em;margin-top:15px;}
-#hero .btn{display:inline-block;margin-top:30px;padding:12px 30px;background:#ff6b6b;color:#fff;border-radius:30px;font-weight:bold;transition:0.3s;}
-#hero .btn:hover{background:#ff4c4c;}
+#hero{background:url('https://images.unsplash.com/photo-1606813905407-cc5a1e6e4d6b?fit=crop&w=1400&q=80') no-repeat center/cover;text-align:center;color:white;padding:150px 20px;position:relative;}
+#hero h2{font-size:3em;font-weight:700;text-shadow:2px 2px 10px rgba(0,0,0,0.7);}
+#hero p{font-size:1.3em;margin-top:20px;text-shadow:1px 1px 8px rgba(0,0,0,0.5);}
+#hero .btn{display:inline-block;margin-top:30px;padding:15px 35px;background:#f39c12;color:#fff;border-radius:30px;font-weight:bold;transition:0.3s;font-size:1.1em;}
+#hero .btn:hover{background:#e67e22;}
 
 /* ===== Hizmetler ===== */
-#services{padding:80px 20px;text-align:center;}
+#services{padding:80px 20px;text-align:center;background:#fff;}
 .services-grid{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin-top:40px;}
-.service-card{background:#fff;border-radius:15px;padding:30px;width:300px;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:0.3s;}
-.service-card:hover{transform:translateY(-10px);box-shadow:0 12px 25px rgba(0,0,0,0.15);}
-.service-card h3{color:#1da1f2;margin-bottom:10px;}
+.service-card{background:#111;color:#fff;border-radius:15px;padding:30px;width:300px;box-shadow:0 12px 25px rgba(0,0,0,0.3);transition:0.3s;}
+.service-card:hover{transform:translateY(-10px) scale(1.05);box-shadow:0 15px 35px rgba(0,0,0,0.5);}
+.service-card h3{color:#f39c12;margin-bottom:10px;}
+.service-card p{color:#ddd;}
 
 /* ===== Kampanya Slider ===== */
-#campaign{padding:80px 20px;text-align:center;background:#e0f7fa;}
-.slider{position:relative;overflow:hidden;border-radius:15px;max-width:1000px;margin:auto;box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+#campaign{padding:80px 20px;text-align:center;background:#f8f9fa;}
+.slider{position:relative;overflow:hidden;border-radius:20px;max-width:1000px;margin:auto;box-shadow:0 12px 25px rgba(0,0,0,0.3);}
 .slides{display:flex;transition:0.5s ease;}
-.slide{min-width:100%;box-sizing:border-box;position:relative;color:#fff;text-align:center;font-weight:bold;}
-.slide img{width:100%;border-radius:15px;}
-.slide .text{position:absolute;top:30%;left:50%;transform:translateX(-50%);font-size:2em;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:15px;}
+.slide{min-width:100%;position:relative;color:#fff;text-align:center;font-weight:bold;}
+.slide img{width:100%;border-radius:20px;}
+.slide .text{position:absolute;top:30%;left:50%;transform:translateX(-50%);font-size:2em;background:rgba(0,0,0,0.6);padding:15px 25px;border-radius:20px;}
 .slider-nav{position:absolute;bottom:15px;left:50%;transform:translateX(-50%);display:flex;gap:10px;}
-.slider-nav span{width:12px;height:12px;background:#fff;border-radius:50%;display:inline-block;cursor:pointer;opacity:0.5;}
+.slider-nav span{width:14px;height:14px;background:#fff;border-radius:50%;display:inline-block;cursor:pointer;opacity:0.5;}
 .slider-nav .active{opacity:1;}
 
 /* ===== Hakkımızda ===== */
-#about{padding:80px 20px;text-align:center;}
-#about p{margin-bottom:20px;line-height:1.8;}
+#about{padding:80px 20px;text-align:center;background:#fff;}
+#about h2{margin-bottom:30px;color:#111;}
+#about p{margin-bottom:20px;line-height:1.8;font-size:1.1em;}
 
-/* ===== Örnek İlanlar ===== */
-#listings{padding:80px 20px;text-align:center;}
+/* ===== Örnek Araba İlanları ===== */
+#listings{padding:80px 20px;text-align:center;background:#f8f9fa;}
 .grid{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;}
-.card{background:#fff;border-radius:15px;padding:20px;width:300px;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:0.3s;}
-.card:hover{transform:translateY(-10px);box-shadow:0 12px 25px rgba(0,0,0,0.15);}
+.card{background:#111;color:#fff;border-radius:15px;padding:20px;width:300px;box-shadow:0 12px 25px rgba(0,0,0,0.3);transition:0.3s;}
+.card:hover{transform:translateY(-10px) scale(1.05);box-shadow:0 15px 35px rgba(0,0,0,0.5);}
 .card img{width:100%;border-radius:10px;}
-.card h3{color:#1da1f2;margin:15px 0 10px 0;}
-.card p{font-size:1em;}
+.card h3{color:#f39c12;margin:15px 0 10px 0;}
+.card p{color:#ddd;}
 
 /* ===== İletişim ===== */
-#contact{padding:80px 20px;text-align:center;background:#e0f7fa;}
-#contact a{display:inline-block;margin:10px;padding:15px 25px;border-radius:25px;font-weight:bold;color:#fff;transition:0.3s;}
-#contact a.mail{background:#1da1f2;}
+#contact{padding:80px 20px;text-align:center;background:#111;}
+#contact a{display:inline-block;margin:10px;padding:15px 30px;border-radius:30px;font-weight:bold;color:#fff;transition:0.3s;font-size:1.1em;}
+#contact a.mail{background:#2980b9;}
 #contact a.wa{background:#25d366;}
 #contact a:hover{opacity:0.9;}
 
 /* ===== Footer ===== */
-footer{text-align:center;padding:20px 0;background:#1da1f2;color:#fff;}
+footer{text-align:center;padding:20px 0;background:#111;color:#fff;font-size:0.9em;}
 
 /* ===== Responsive ===== */
 @media(max-width:768px){.services-grid,.grid{flex-direction:column;align-items:center;} nav ul{flex-direction:column;} nav ul li{margin:10px 0;}}
@@ -75,13 +77,13 @@ footer{text-align:center;padding:20px 0;background:#1da1f2;color:#fff;}
 
 <header>
   <div class="container">
-    <h1>Profesyonel Sosyal Medya & Demo Site</h1>
+    <h1>Şahinler Premium Araba Demo</h1>
     <nav>
       <ul>
         <li><a href="#services">Hizmetler</a></li>
         <li><a href="#campaign">Kampanya</a></li>
         <li><a href="#about">Hakkımızda</a></li>
-        <li><a href="#listings">Örnek İlanlar</a></li>
+        <li><a href="#listings">Örnek Araçlar</a></li>
         <li><a href="#contact">İletişim</a></li>
       </ul>
     </nav>
@@ -90,27 +92,27 @@ footer{text-align:center;padding:20px 0;background:#1da1f2;color:#fff;}
 
 <section id="hero">
   <div class="container">
-    <h2>Hayallerinizi Gerçeğe Dönüştürün!</h2>
-    <p>Profesyonel danışmanlık ve örnek demo sitelerle tüm süreçleri deneyimleyin.</p>
+    <h2>Hayalinizdeki Araç Burada!</h2>
+    <p>Şahinler ile premium araçları keşfedin, demo ilanları deneyimleyin ve danışmanlık fırsatlarından yararlanın.</p>
     <a href="#services" class="btn">Hizmetleri Gör</a>
   </div>
 </section>
 
 <section id="services">
   <div class="container">
-    <h2>Kişiye Özel Hizmetler</h2>
+    <h2>Kişiye Özel Danışmanlık Paketleri</h2>
     <div class="services-grid">
       <div class="service-card">
         <h3>Starter Paket</h3>
-        <p>Yeni başlayanlar için. Hedef kitlenizi büyütün ve sosyal medyada güçlü bir başlangıç yapın.</p>
+        <p>Yeni başlayanlar için, sosyal medya ve araç tanıtımında hızlı başlangıç.</p>
       </div>
       <div class="service-card">
         <h3>Pro Paket</h3>
-        <p>Orta seviyede hesaplar için. Strateji, içerik planlaması ve düzenli analiz ile büyümenizi hızlandırın.</p>
+        <p>Orta seviye destek, strateji, içerik planlaması ve analiz ile büyüme.</p>
       </div>
       <div class="service-card">
         <h3>VIP Paket</h3>
-        <p>Tam profesyonel destek. Kişiye özel içerik, günlük analiz ve danışmanlık ile hedeflerinize hızlı ulaşın.</p>
+        <p>Tam profesyonel destek, özel danışmanlık ve premium stratejiler.</p>
       </div>
     </div>
   </div>
@@ -118,12 +120,12 @@ footer{text-align:center;padding:20px 0;background:#1da1f2;color:#fff;}
 
 <section id="campaign">
   <div class="container">
-    <h2>İlk Hafta Ücretsiz Kampanya!</h2>
+    <h2>İlk Hafta Ücretsiz Danışmanlık!</h2>
     <div class="slider">
       <div class="slides">
-        <div class="slide"><img src="/mnt/data/A_carousel_of_promotional_digital_images_targeting.png" alt="Kampanya"><div class="text">Kişisel Danışmanlık 1. Hafta Ücretsiz!</div></div>
-        <div class="slide"><img src="/mnt/data/A_carousel_of_promotional_digital_images_targeting.png" alt="Kampanya"><div class="text">Hayallerine Bir Adım Daha Yaklaş!</div></div>
-        <div class="slide"><img src="/mnt/data/A_carousel_of_promotional_digital_images_targeting.png" alt="Kampanya"><div class="text">Geleceğini Şekillendir, Denemesi Ücretsiz!</div></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1606813905407-cc5a1e6e4d6b?fit=crop&w=1000&q=80" alt="Kampanya"><div class="text">Kişisel Danışmanlık 1. Hafta Ücretsiz!</div></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1616628187992-26f06339c02f?fit=crop&w=1000&q=80" alt="Kampanya"><div class="text">Hayalinize Bir Adım Daha Yaklaşın!</div></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1616628058850-d2e8f8f79247?fit=crop&w=1000&q=80" alt="Kampanya"><div class="text">Premium Deneyim Sizi Bekliyor!</div></div>
       </div>
       <div class="slider-nav">
         <span class="dot active"></span>
@@ -137,15 +139,15 @@ footer{text-align:center;padding:20px 0;background:#1da1f2;color:#fff;}
 <section id="about">
   <div class="container">
     <h2>Hakkımızda</h2>
-    <p>Biz genç ve enerjik bir ekibiz. Sosyal medyada ve dijital projelerde uzun yıllar deneyim kazandık.</p>
-    <p>Müşterilerimizin hedeflerini anlamak, onlara kişiye özel çözümler sunmak ve hayallerini gerçeğe dönüştürmek bizim için en önemli öncelik.</p>
-    <p>Burada sadece danışmanlık sunmuyoruz; ilham ve yönlendirme ile kullanıcıların başarı yolculuğunu destekliyoruz.</p>
+    <p>Şahinler ekibi, genç ve enerjik bir ekip olarak dijital dünyada ve otomotiv sektöründe uzun yıllar deneyim kazanmıştır.</p>
+    <p>Müşterilerimizin hedeflerini anlamak, kişiye özel çözümler üretmek ve hayallerini gerçeğe dönüştürmek bizim için en büyük önceliktir.</p>
+    <p>Premium deneyim, güven ve profesyonellik ile hem danışmanlık hem de demo araç deneyimi sunuyoruz.</p>
   </div>
 </section>
 
 <section id="listings">
   <div class="container">
-    <h2>Örnek Araba İlanları</h2>
+    <h2>Örnek Araçlar</h2>
     <div class="grid">
       <div class="card"><img src="https://images.unsplash.com/photo-1616628187992-26f06339c02f?fit=crop&w=400&q=80" alt="BMW"><h3>BMW 320i 2020</h3><p>Fiyat: 250.000 TL</p></div>
       <div class="card"><img src="https://images.unsplash.com/photo-1616628058850-d2e8f8f79247?fit=crop&w=400&q=80" alt="Audi"><h3>Audi A4 2019</h3><p>Fiyat: 230.000 TL</p></div>
@@ -163,7 +165,7 @@ footer{text-align:center;padding:20px 0;background:#1da1f2;color:#fff;}
 </section>
 
 <footer>
-  <p>&copy; 2026 Profesyonel Sosyal Medya & Demo Site. Tüm hakları saklıdır.</p>
+  <p>&copy; 2026 Şahinler Premium Araba Demo. Tüm hakları saklıdır.</p>
 </footer>
 
 <script>
@@ -173,7 +175,7 @@ let dots = document.querySelectorAll('.dot');
 let current = 0;
 function showSlide(index){
   if(index >= slides.length) current=0;
-  else if(index <0) current=slides.length-1;
+  else if(index<0) current=slides.length-1;
   else current=index;
   slides.forEach((s,i)=>{s.style.transform=`translateX(-${current*100}%)`});
   dots.forEach((d,i)=>d.classList.toggle('active',i===current));
