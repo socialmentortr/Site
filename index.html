@@ -1,74 +1,310 @@
-eta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Batuhan Şahin - Sosyal Medya Büyüme Danışmanlığı</title>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genç Girişimci Sosyal Medya Danışmanlığı</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  /* Genel stil */
-  body {margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#0f0f0f;color:#fff;line-height:1.6;}
-  a {text-decoration:none;}
-  .container {max-width:800px;margin:auto;padding:30px;}
-  h1,h2,h3 {margin:10px 0;}
-  
-  /* Başlık */
-  .header {text-align:center;padding:50px 20px;background:linear-gradient(90deg,#ff7f50,#ffb347);}
-  .header h1 {font-size:3em;margin-bottom:10px;}
-  .header p {font-size:1.2em;opacity:0.9;}
-  
-  /* Tanıtım bölümü */
-  .about {background:#1a1a1a;padding:30px;border-radius:15px;margin:30px 0;}
-  .about h2 {color:#ffb347;}
-  .about p {margin:10px 0;font-size:1.05em;}
+/* ===== Genel Ayarlar ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f6f9;
+}
 
-  /* Hizmetler */
-  .services {margin:30px 0;}
-  .card {background:#262626;padding:20px;border-radius:15px;margin-bottom:20px;box-shadow:0 0 10px rgba(0,0,0,0.5);}
-  .card h3 {color:#ff7f50;}
-  .card ul {margin:10px 0 0 20px;}
-  .card ul li {margin:5px 0;}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
 
-  /* WhatsApp butonu */
-  .whatsapp-btn {display:block;text-align:center;background:#25D366;color:#000;font-weight:bold;padding:20px;margin:40px 0;border-radius:15px;font-size:1.2em;}
-  .whatsapp-btn:hover {opacity:0.9;}
-  
-  /* Footer */
-  footer {text-align:center;margin-top:50px;opacity:0.6;font-size:0.9em;}
+/* ===== Header ===== */
+header {
+  background: #1da1f2;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+/* ===== Hero ===== */
+#hero {
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=1400&q=80') no-repeat center center/cover;
+  text-align: center;
+  color: white;
+  padding: 120px 20px;
+}
+
+#hero h2 {
+  font-size: 2.5em;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+#hero .btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: #ff6b6b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#hero .btn:hover {
+  background: #ff4c4c;
+}
+
+/* ===== Hizmetler ===== */
+#services {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#services h2 {
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  color: #1da1f2;
+}
+
+/* ===== Hakkımızda ===== */
+#about {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* ===== Sohbetler / Testimonials ===== */
+#testimonials {
+  padding: 80px 20px;
+  background: #e0f7fa;
+  text-align: center;
+}
+
+#testimonials h2 {
+  margin-bottom: 40px;
+}
+
+.chat-bubbles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.bubble {
+  background: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+/* ===== İletişim ===== */
+#contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 40px;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact input, #contact textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+#contact button {
+  padding: 15px;
+  background: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact button:hover {
+  background: #0d8ddb;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #1da1f2;
+  color: #fff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+}
 </style>
 </head>
 <body>
 
-<!-- Başlık -->
-<div class="header">
-  <h1>Batuhan Şahin</h1>
-  <p>Sosyal Medya Büyüme Danışmanlığı ile hayallerinizi güçlendiriyoruz</p>
-</div>
-
-<!-- Hakkımda -->
-<div class="container about">
-  <h2>Ben Kimim?</h2>
-  <p>Merhaba, ben <strong>Batuhan Şahin</strong>, 19 yaşındayım. 2022 yılında bu işe başladım ve yaklaşık 3,5–4 senedir sosyal medya büyüme ve danışmanlık üzerine çalışıyorum. Her gün daha iyi hizmet vermek, sizin hayallerinizi gerçeğe dönüştürmek için çabalıyorum.</p>
-  <p>Hedefimiz, birlikte daha güçlü olmak ve güveninizi kazanmak. Size özel stratejilerle, duygularınıza hitap eden çözümler sunuyoruz. Herkesin başarısı bizim motivasyonumuzdur.</p>
-</div>
-
-<!-- Hizmetler -->
-<div class="container services">
-  <div class="card">
-    <h3>Hizmetlerimiz</h3>
-    <ul>
-      <li>Birebir Sosyal Medya Hesap Analizi</li>
-      <li>Özel İçerik ve Büyüme Planı</li>
-      <li>3,5-4 Yıllık Tecrübe ile Profesyonel Destek</li>
-    </ul>
+<header>
+  <div class="container">
+    <h1>Hayallerini Gerçekleştiren Genç Girişimci</h1>
+    <nav>
+      <ul>
+        <li><a href="#services">Hizmetler</a></li>
+        <li><a href="#about">Hakkımızda</a></li>
+        <li><a href="#testimonials">Sohbetler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
   </div>
-</div>
+</header>
 
-<!-- WhatsApp -->
-<div class="container">
-  <a class="whatsapp-btn" href="https://wa.me/905398342301" target="_blank">WhatsApp’tan Bana Ulaşın</a>
-</div>
+<section id="hero">
+  <div class="container">
+    <h2>Sosyal medyada hayallerinizi gerçeğe dönüştürün</h2>
+    <p>Profesyonel danışmanlık ile takipçi ve etkileşimlerinizi maksimuma çıkarın.</p>
+    <a href="#contact" class="btn">Hemen Başlayın</a>
+  </div>
+</section>
 
-<!-- Footer -->
+<section id="services">
+  <div class="container">
+    <h2>Kişiye Özel Hizmetler</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Starter Paket</h3>
+        <p>Yeni başlayanlar için ideal. Hedef kitlenizi büyütün ve sosyal medyada güçlü bir başlangıç yapın.</p>
+      </div>
+      <div class="service-card">
+        <h3>Pro Paket</h3>
+        <p>Orta seviyede hesaplar için. Strateji, içerik planlaması ve düzenli analiz ile büyümenizi hızlandırın.</p>
+      </div>
+      <div class="service-card">
+        <h3>VIP Paket</h3>
+        <p>Tam profesyonel destek. Kişiye özel içerik, günlük takipçi analizi ve özel danışmanlık ile hedeflerinize hızlı ulaşın.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>Hakkımızda</h2>
+    <p>Genç ve enerjik ekibimiz, sosyal medyada hayallerinizi gerçeğe dönüştürmek için burada. 7 yıllık deneyimle markanızı büyütüyoruz.</p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <h2>Gerçek Sohbetler</h2>
+    <div class="chat-bubbles">
+      <div class="bubble">“Danışmanlık sayesinde ilk 3 ayda 10K takipçiye ulaştım!”</div>
+      <div class="bubble">“Hayallerim gerçek oldu, markam büyüdü.”</div>
+      <div class="bubble">“VIP paketle sosyal medya stratejim mükemmel çalıştı.”</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>İletişim</h2>
+    <form>
+      <input type="text" placeholder="Adınız" required>
+      <input type="email" placeholder="E-posta" required>
+      <textarea placeholder="Mesajınız" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+</section>
+
 <footer>
-  © 2026 Batuhan Şahin | Tüm Hakları Saklıdır
+  <div class="container">
+    <p>&copy; 2026 Genç Girişimci Sosyal Medya Danışmanlığı. Tüm hakları saklıdır.</p>
+  </div>
 </footer>
 
 </body>
-</html
+</html>
